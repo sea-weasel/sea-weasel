@@ -4,20 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Sea Weasel Apparel</h1>
+      <h2>You're the captain now...</h2>
+      <p>Sea Weasels swim around all over the place, they don't give a shit. You might find a Sea Weasel in bed with your wife. What are you gonna do about it? Nothing. Sign up below to find out when you can get your hands Sea Weasel Apparel.</p>
     </div>
   );
 }
