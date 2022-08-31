@@ -18,7 +18,7 @@ function App() {
             <h2>You're the captain now...</h2>
             <p>Sea Weasels swim around all over the place, we don't give a shit. Sign up below to find out when you can get your paws on Sea Weasel Apparel.</p>
             <input placeholder='enter email address'></input>
-            <button>Sign up</button>
+            <button className='ripple'>Notify me</button>
           </div>
 
           <div className='image'>

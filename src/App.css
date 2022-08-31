@@ -44,6 +44,24 @@ body {
   padding: 0 5px;
 }
 
+.ripple {
+  background-position: center;
+  transition: background 0.4s;
+}
+
+.ripple:hover {
+  background-color: rgb(250, 230, 3);
+  background-image: radial-gradient(circle, transparent 1%, rgb(228, 211, 21) 1%);
+  background-position: center;
+  background-size: 15000%;
+}
+
+.ripple:active {
+  transition: background 0s;
+  background-color: rgb(246, 235, 117);
+  background-size: 100%;
+}
+
 .image img{
   border: 3px solid goldenrod;
   border-radius: 5px;
@@ -58,15 +76,16 @@ input {
   background-color: navy;
   color: goldenrod;
   padding: 10px 15px;
-  margin-right: 10px;
+  margin: 0 10px 15px 10px;
 }
 
 button {
-  border: none;
+  border: 3px solid white;
   border-radius: 5px;
-  background-color: goldenrod;
+  background-color: rgb(218, 203, 32);
   color: navy;
   padding: 10px 15px;
+  font-weight: 600;
 }
 
 .social {
