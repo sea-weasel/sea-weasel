@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import otter from './images/otter300x300.png'
 
 function App() {
   return (
@@ -7,14 +8,21 @@ function App() {
 
       <div className='container'>
 
-        <div className='content'>
+        <div className='title'>
           <h1>Sea Weasel Apparel</h1>
-          <h2>You're the captain now...</h2>
-          <p>Sea Weasels swim around all over the place, they don't give a shit. You might find a Sea Weasel in bed with your wife. What are you gonna do about it? Nothing. Sign up below to find out when you can get your paws on Sea Weasel Apparel.</p>
+        </div>
+
+        <div className='content'>
 
           <div className='cta'>
+            <h2>You're the captain now...</h2>
+            <p>Sea Weasels swim around all over the place, we don't give a shit. Sign up below to find out when you can get your paws on Sea Weasel Apparel.</p>
             <input placeholder='enter email address'></input>
             <button>Sign up</button>
+          </div>
+
+          <div className='image'>
+            <img src={otter} alt='sea-weasel'></img>
           </div>
 
         </div>
