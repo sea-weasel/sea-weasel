@@ -28,9 +28,9 @@ function App() {
         </div>
 
         <div className='social'>
-          <i class="devicon-facebook-plain"></i>
-          <i class="devicon-twitter-original"></i>
-          <i class="devicon-linkedin-plain"></i>
+          <a href='https://www.facebook.com/'><i class="devicon-facebook-plain"></i></a>
+          <a href='https://twitter.com/home'><i class="devicon-twitter-original"></i></a>
+          <a href='https://www.linkedin.com/in/damon-pickett/'><i class="devicon-linkedin-plain"></i></a>
         </div>
 
         <div className='copyright'>
