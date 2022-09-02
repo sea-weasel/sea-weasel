@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import otter from './images/otter300x300.png'
+import gweasel from './images/sea-weasel-boat-g300x300.png';
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
           <h1>Sea Weasel Apparel</h1>
         </div>
 
+        {/* <img src={sw} alt='logo'></img> */}
+
         <div className='content'>
 
           <div className='cta'>
@@ -22,7 +24,7 @@ function App() {
           </div>
 
           <div className='image'>
-            <img src={otter} alt='sea-weasel'></img>
+            <img src={gweasel} alt='sea-weasel'></img>
           </div>
 
         </div>
