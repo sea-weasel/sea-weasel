@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import otter from './images/otter300x300.png'
+import gweasel from './images/sea-weasel-boat-g300x300.png';
 
 function App() {
   return (
+    <>
     <div className="App">
 
       <div className='container'>
@@ -22,7 +23,7 @@ function App() {
           </div>
 
           <div className='image'>
-            <img src={otter} alt='sea-weasel'></img>
+            <img src={gweasel} alt='sea-weasel'></img>
           </div>
 
         </div>
@@ -36,10 +37,15 @@ function App() {
         <div className='copyright'>
           <p>&copy; Sea Weasel Apparel 2022</p>
         </div>
-
+        
       </div>
-
     </div>
+    <div className='water'>
+      <div className='wave'></div>
+      <div className='wave'></div>
+      <div className='wave'></div>
+  </div>
+  </>
   );
 }
 
