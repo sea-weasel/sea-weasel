@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import gweasel from './images/sea-weasel-boat-g300x300.png';
+import swtype from './images/SeaWeaselGoldTypeFinal-removebg(2).png';
+import mono from './images/SeaWeaselGoldMono-removebg-preview.png'
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <div className='container'>
 
         <div className='title'>
-          <h1>Sea Weasel Apparel</h1>
+          <img src={swtype} className='logo-type' alt='Sea Weasel' />
+          <img src={mono} className='logo-mono'alt='Sea Weasel' />
         </div>
 
         <div className='content'>
