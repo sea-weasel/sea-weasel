@@ -36,6 +36,18 @@ body {
   margin-bottom: 30px;
 }
 
+.logo-type {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.logo-mono {
+  width: 20%;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
 .content {
   max-width: 1000px;
   margin: 0 auto;
@@ -71,7 +83,7 @@ body {
 .image img{
   border: 3px solid goldenrod;
   border-radius: 5px;
-  max-width: 50%;
+  max-width: 70%;
   height: auto;
   order: 0;
 }
@@ -113,9 +125,19 @@ button {
 }
 
 @media screen and (min-width: 750px) {
+  .logo-type {
+    width: 50%;
+  }
+  
+  .logo-mono {
+    width: 10%;
+  }
+
   .content {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
   }
   
   .cta {
@@ -134,8 +156,13 @@ button {
 }
 
 @media screen and (min-width: 900px) {
-  .title {
-    font-size: 1.5em;
+
+  .logo-type {
+    width: 30%;
+  }
+  
+  .logo-mono {
+    width: 8%;
   }
 
   .content {
