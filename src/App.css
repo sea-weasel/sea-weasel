@@ -5,7 +5,7 @@ font-family: 'Sail', cursive; */
 
 body {
   background-color: navy;
-  color: goldenrod;
+  color: rgb(216	143	33);
   text-align: center;
   background-image: url('./images/otter-attack.jpeg');
   background-color: rgb(25, 22, 22);
@@ -81,7 +81,7 @@ body {
 }
 
 .image img{
-  border: 3px solid goldenrod;
+  border: 3px solid rgb(216, 143, 33);
   border-radius: 5px;
   max-width: 70%;
   height: auto;
@@ -89,10 +89,10 @@ body {
 }
 
 input {
-  border: 2px solid goldenrod;
+  border: 2px solid rgb(216,	143,	33);
   border-radius: 5px;
   background-color: navy;
-  color: goldenrod;
+  color: rgb(216,	143,	33);
   padding: 10px 15px;
   margin: 0 10px 15px 10px;
 }
@@ -147,7 +147,7 @@ button {
   }
   
   .image img{
-    border: 3px solid goldenrod;
+    border: 3px solid rgb(216,	143,	33);
     border-radius: 5px;
     max-width: 70%;
     height: auto;
