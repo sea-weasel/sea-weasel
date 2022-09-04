@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sea-weasel/static/css/main.e4a94751.css",
+    "main.js": "/sea-weasel/static/js/main.b924339a.js",
+    "static/js/787.f9d4c395.chunk.js": "/sea-weasel/static/js/787.f9d4c395.chunk.js",
+    "static/media/SeaWeaselGoldTypeFinal-removebg(2).png": "/sea-weasel/static/media/SeaWeaselGoldTypeFinal-removebg(2).6b2bc452b38f4312bb46.png",
+    "static/media/sea_weasel_bright_bg.jpeg": "/sea-weasel/static/media/sea_weasel_bright_bg.66e085dbb02087adce1e.jpeg",
+    "static/media/sea-weasel-boat-g300x300.png": "/sea-weasel/static/media/sea-weasel-boat-g300x300.efb9e7df6d2a98dc0639.png",
+    "static/media/SeaWeaselGoldMono-removebg-preview.png": "/sea-weasel/static/media/SeaWeaselGoldMono-removebg-preview.3f462c14b4ce2b7fd335.png",
+    "static/media/logo.svg": "/sea-weasel/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sea-weasel/index.html",
+    "main.e4a94751.css.map": "/sea-weasel/static/css/main.e4a94751.css.map",
+    "main.b924339a.js.map": "/sea-weasel/static/js/main.b924339a.js.map",
+    "787.f9d4c395.chunk.js.map": "/sea-weasel/static/js/787.f9d4c395.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4a94751.css",
+    "static/js/main.b924339a.js"
+  ]
+}
