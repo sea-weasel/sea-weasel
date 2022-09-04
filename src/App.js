@@ -10,7 +10,7 @@ function App() {
     <div className="App">
 
       <div className='container'>
-
+        <div className='opaque-canvas'>
         <div className='title'>
           <img src={swtype} className='logo-type' alt='Sea Weasel' />
           <img src={mono} className='logo-mono'alt='Sea Weasel' />
@@ -41,6 +41,7 @@ function App() {
           <p>&copy; Sea Weasel Apparel 2022</p>
         </div>
         
+      </div>
       </div>
     </div>
     <div className='water'>

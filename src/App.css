@@ -7,7 +7,7 @@ body {
   background-color: navy;
   color: rgb(216	143	33);
   text-align: center;
-  background-image: url('./images/otter-attack.jpeg');
+  background-image: url('./images/sea_weasel_bright_bg.jpeg');
   background-color: rgb(25, 22, 22);
   height: 100%;
   background-size: cover;
@@ -28,8 +28,15 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+}
+
+.opaque-canvas {
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  margin: 0px auto;
+  padding-bottom: 20px;
+  height: 100vh;
 }
 
 .title {
@@ -49,7 +56,6 @@ body {
 }
 
 .content {
-  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -59,7 +65,7 @@ body {
 .cta {
   margin-bottom: 50px;
   order: 1;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .ripple {
@@ -83,7 +89,7 @@ body {
 .image img{
   border: 3px solid rgb(216, 143, 33);
   border-radius: 5px;
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
   order: 0;
 }
@@ -144,13 +150,14 @@ button {
     margin-bottom: 50px;
     order: 0;
     max-width: 300px;
+    margin-right: 10px;
   }
   
   .image img{
     border: 3px solid rgb(216,	143,	33);
     border-radius: 5px;
-    max-width: 70%;
     height: auto;
+    margin-left: 10px;
   }
 
 }
@@ -158,11 +165,11 @@ button {
 @media screen and (min-width: 900px) {
 
   .logo-type {
-    width: 30%;
+    width: 500px;
   }
   
   .logo-mono {
-    width: 8%;
+    width: 120px;
   }
 
   .content {
