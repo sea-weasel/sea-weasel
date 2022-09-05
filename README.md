@@ -41,3 +41,11 @@ See [https://csshint.com/css-wave-animation/](https://csshint.com/css-wave-anima
     100% {transform: translateX(-50%);}
 }
 ```
+
+```html
+<div className='water'>
+      <div className='wave'></div>
+      <div className='wave'></div>
+      <div className='wave'></div>
+  </div>
+```
