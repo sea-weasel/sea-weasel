@@ -3,6 +3,7 @@ import "./App.css";
 import gweasel from "./images/sea-weasel-boat-g300x300.png";
 import swtype from "./images/SeaWeaselGoldTypeFinal-removebg(2).png";
 import mono from "./images/SeaWeaselGoldMono-removebg-preview.png";
+import MailchimpSubscribe from "./components/MailchimpSubscribe";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
             </div>
 
             <div className="content">
+
+              
+
+
               <div className="cta">
                 <h2>You're the captain now...</h2>
                 <p>
@@ -23,6 +28,11 @@ function App() {
                   shit. Sign up below to find out when you can get your paws on
                   Sea Weasel Apparel.
                 </p>
+
+                <div className="mailchimp">
+                  <MailchimpSubscribe/>
+                </div>
+                
                 <input placeholder="enter email address"></input>
                 <button className="ripple">Notify me</button>
               </div>
