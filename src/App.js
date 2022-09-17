@@ -3,9 +3,12 @@ import "./App.css";
 import gweasel from "./images/sea-weasel-boat-g300x300.png";
 import swtype from "./images/SeaWeaselGoldTypeFinal-removebg(2).png";
 import mono from "./images/SeaWeaselGoldMono-removebg-preview.png";
-import MailchimpSubscribe from "./components/MailchimpSubscribe";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import CustomForm from "./components/CustomForm";
 
 function App() {
+  const postUrl = `https://gmail.us11.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
+
   return (
     <>
       <div className="App">
@@ -17,10 +20,6 @@ function App() {
             </div>
 
             <div className="content">
-
-              
-
-
               <div className="cta">
                 <h2>You're the captain now...</h2>
                 <p>
@@ -30,9 +29,18 @@ function App() {
                 </p>
 
                 <div className="mailchimp">
-                  <MailchimpSubscribe/>
+                  <MailchimpSubscribe
+                    url={postUrl}
+                    render={({ subscribe, status, message }) => (
+                      <CustomForm
+                        status={status}
+                        message={message}
+                        onValidated={(formData) => subscribe(formData)}
+                      />
+                    )}
+                  />
                 </div>
-                
+
                 <input placeholder="enter email address"></input>
                 <button className="ripple">Notify me</button>
               </div>
@@ -57,8 +65,6 @@ function App() {
             <div className="copyright">
               <p>&copy; Sea Weasel Apparel 2022</p>
             </div>
-
-            
           </div>
         </div>
       </div>

@@ -49,8 +49,3 @@ See [https://csshint.com/css-wave-animation/](https://csshint.com/css-wave-anima
       <div className='wave'></div>
   </div>
 ```
-
-https://gmail.us11.list-manage.com/subscribe/post
-3fe060b36d6aa0db755ae2cea
-babaf5bb1d
-MERGE0
