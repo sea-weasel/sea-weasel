@@ -1,10 +1,18 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import InputField from './InputField';
 
 const CustomForm = ({ status, message, onValidated}) => {
 
     const [email, setEmail] = useState('');
+
+    useEffect(() => {
+        if(status === 'success') clearFields();
+    }, [status])
+
+    const clearFields = () => {
+        setEmail('');
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,43 +23,42 @@ const CustomForm = ({ status, message, onValidated}) => {
         });
     }
 
+
     return (
         <form className='mc__form' onSubmit={(e) => handleSubmit(e)}>
-            <h3 className='mc__title'>Join email list</h3>
-
-            {status === 'sending' && (
-                <div className='mc__alert mc__alert--sending'>
-                    sending...
-                </div>
-            )}
-            {status === 'error' && (
-                <div 
-                    className='mc__alert mc__alert--error'
-                    dangerouslySetInnerHTML={{ __html: message }}
-                />
-            )}
-            {status === 'success' && (
-                <div 
-                    className='mc__alert mc__alert--success'
-                    dangerouslySetInnerHTML={{ __html: message }}
-                />
-            )}
-
+    
             <div className='mc__field-container'>
                 <InputField 
-                    label='Email'
+                    label=''
                     onChangeHandler={setEmail}
                     type='email'
                     value={email}
-                    placeholder='enter email address'
+                    placeholder='Email address'
                     isRequired
+                    name='email'
                 />
             </div>
             <InputField 
-                label='subscribe'
+                label='Notify me'
                 type='submit'
                 formValues={[email]}
             />
+            
+            {status === 'sending' && (
+                <div className='notification-status'>
+                    <p>Sending...</p>
+                </div>
+            )}
+            {status === 'error' && (
+                <div className='notification-status'>
+                    <p>Something went wrong, try again</p>
+                </div>
+            )}
+            {status === 'success' && (
+                <div className='notification-status'>
+                    <p>Nice, we'll be in touch</p>
+                </div>
+            )}
         </form>
         
     );

@@ -6,6 +6,7 @@ import mono from "./images/SeaWeaselGoldMono-removebg-preview.png";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import CustomForm from "./components/CustomForm";
 
+
 function App() {
   const postUrl = `https://gmail.us11.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
 
@@ -41,8 +42,8 @@ function App() {
                   />
                 </div>
 
-                <input placeholder="enter email address"></input>
-                <button className="ripple">Notify me</button>
+                {/* <input placeholder="enter email address"></input>
+                <button className="ripple">Notify me</button> */}
               </div>
 
               <div className="image">
