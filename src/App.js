@@ -51,7 +51,7 @@ function App() {
               </div>
             </div>
 
-            <div className="social">
+            {/* <div className="social">
               <a href="https://www.facebook.com/">
                 <i class="devicon-facebook-plain"></i>
               </a>
@@ -61,7 +61,7 @@ function App() {
               <a href="https://www.linkedin.com/in/damon-pickett/">
                 <i class="devicon-linkedin-plain"></i>
               </a>
-            </div>
+            </div> */}
 
             <div className="copyright">
               <p>&copy; Sea Weasel Apparel 2022</p>
