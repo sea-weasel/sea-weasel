@@ -14,7 +14,7 @@ function InputField(props) {
     if (props.type === "submit") {
         return (
             <input 
-                className='primaryBtn primaryBtn--big g__justify-self-center'
+                className='btn ripple'
                 type='submit'
                 value={props.label}
                 disabled={validateInput(props.formValues)}
@@ -45,7 +45,6 @@ function InputField(props) {
                     placeholder={props.placeholder}
                     value={props.value}
                     required={props.isRequired}
-                    className='inputField__field'
                     name={props.name}
                     />
             </label>

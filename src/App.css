@@ -67,59 +67,11 @@ body {
   padding: 0 10px;
 }
 
-.inputField__label {
-  display: grid;
-  grid-row-gap: 10px;
-  /* color */
-  font-size: 16px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px;
- 
-
-  
-}
-
-.inputField__field {
-  
-  /* color */
-  border: none;
-  font-size: 16px;
-  padding: 16px 20px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px;
+.btn {
+  background-color: yellow;
+  color: black;
+  border: 3px solid rgb(216, 143, 33);
   font-weight: bold;
-  
-
-  
-}
-
-::placeholder { /* Firefox */
-  font-weight: normal;
-  /* color  */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  /* color  */
-  font-weight: normal;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  /* color  */
-  font-weight: normal;
-}
-
-input[disabled] {
-  /* background-color:  */
-  cursor: default;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
-
-  /* &:hover {
-    background-color: v.$primaryDark2;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
-    transform: scale(1);
-  } */
 }
 
 .ripple {
@@ -149,12 +101,25 @@ input[disabled] {
 }
 
 input {
-  border: 2px solid rgb(216,	143,	33);
+  border: none;
   border-radius: 5px;
-  background-color: navy;
-  color: rgb(216,	143,	33);
+  background-color: rgb(27, 155, 241);
+  color: black;
   padding: 10px 15px;
   margin: 0 10px 15px 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
 }
 
 button {
@@ -164,6 +129,21 @@ button {
   color: navy;
   padding: 10px 15px;
   font-weight: 600;
+}
+
+.mc__form {
+  position: relative;
+  width: auto;
+}
+
+.notification-status {
+  font-size: 0.6em;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .social {
